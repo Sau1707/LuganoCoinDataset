@@ -8,7 +8,7 @@ https://explorer.3achain.org/token/0x1cC4967fF6592E6672827809767dF82A49f7c30D
 The data is set into `/data` and it's saved in json syntax.
 This is a example of a value in the dataset
 
-```json
+```ts
 {
 	"block": "4101482", // block number
 	"time": "2022-06-21 13:13:44.000000Z", // time of transaction
