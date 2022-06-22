@@ -1,9 +1,9 @@
-## LVGA POINT DATASET
+# LVGA POINT DATASET
 
 This folder create an algorithm to scrape data from:
 https://explorer.3achain.org/token/0x1cC4967fF6592E6672827809767dF82A49f7c30D
 
-#### Data
+## Data
 
 The data is set into `/data` and it's saved in json syntax.
 This is a example of a value in the dataset
@@ -18,19 +18,26 @@ This is a example of a value in the dataset
 }
 ```
 
-#### Update the dataset
+The entire dataset in csv format it's saved in `/src/all.csv`
+
+## Update the dataset
 
 To update the dataset:
 
 ```bash
 cd src
+```
+
+to got the the current directory, then
+
+```bash
 python main.py
 ```
 
-it automatically download the new data and update the last inside data folder, as well year and month if have changed.
+it automatically download the new data and update the last inside data folder, as well year and month.
 
-#### Disclaimer
+## Disclaimer
 
 This project can create a lot of traffic at https://explorer.3achain.org/
 
-Use wisely
+Be careful: _Use it wisely_
