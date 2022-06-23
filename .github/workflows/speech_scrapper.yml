@@ -18,6 +18,11 @@ jobs:
             - name: checkout repo content
               uses: actions/checkout@v2 # checkout the repository content to github runner
 
+            - name: Set Timezone
+              used: szenius/set-timezone@v1.0
+              with:
+                  timezoneLinux: "Europe/Rome"
+
             - name: setup python
               uses: actions/setup-python@v2
               with:

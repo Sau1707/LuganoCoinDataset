@@ -25,6 +25,12 @@ The entire dataset in csv format it's saved in `/src/all.csv`
 To update the dataset:
 
 ```bash
+pip install -r requirements.txt
+```
+
+to install python pagkages requirements, then
+
+```bash
 cd src
 ```
 
