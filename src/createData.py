@@ -23,7 +23,7 @@ def getData(timeMin, timeMax):
     for d in good:
         jsonData.append({
             "block": d[0],
-            "data": d[1],
+            "data": str(datetime.datetime.strptime(d[1], "%Y-%m-%d %H:%M:%S") + relativedelta(hours=2)),
             "ammount": d[2],
             "sender": d[3],
             "reciver": d[4]
