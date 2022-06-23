@@ -11,7 +11,7 @@ This is a example of a value in the dataset
 ```ts
 {
 	"block": "4101482", // block number
-	"time": "2022-06-21 13:13:44.000000Z", // time of transaction
+	"time": "2022-06-21 13:13:44.000000Z", // time of transaction at Lugano timezone
 	"quantity": "400", // LVGA coin tranfered
 	"sender": "0x3BB4294684ef91d934b7B2aD0d8Ae09812Ae188A", // sender wallet
 	"reciver": "0xF96a9f4829dBA08b7ECcb79da8B4868e5D2DFFa3" // sender reciver
@@ -19,8 +19,18 @@ This is a example of a value in the dataset
 ```
 
 The entire dataset in csv format it's saved in `/src/all.csv`
+Attenction! The time is in UTC
 
-## Update the dataset
+## Automatic update of the dataset
+
+This reposity automatically update his dataset at midnight GMT+2
+to get the data make an api call to the row github file, for example:
+
+```bash
+https://raw.githubusercontent.com/Sau1707/LuganoCoinDataset/main/data/last/month.json
+```
+
+## Manually update the dataset
 
 To update the dataset:
 

@@ -2,7 +2,7 @@ name: Update-data
 
 on:
     schedule:
-        - cron: "0 22 * * *" # runs at 12:00 UTC everyday
+        - cron: "0 22 * * *" # runs at 00:00 UTC everyday
     push:
         branches:
             - main
@@ -14,11 +14,6 @@ jobs:
         steps:
             - name: checkout repo content
               uses: actions/checkout@v2 # checkout the repository content to github runner
-
-            - name: Set Timezone
-              uses: szenius/set-timezone@v1.0
-              with:
-                  timezoneLinux: "Europe/Rome"
 
             - name: setup python
               uses: actions/setup-python@v2
