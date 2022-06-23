@@ -3,6 +3,13 @@ name: Update-data
 on:
     schedule:
         - cron: "0 11 * * *" # runs at 12:00 UTC everyday
+    push:
+      branches:
+        - main
+    pull_request:
+      branches:
+        - main
+    workflow_dispatch:
 
 jobs:
     build:
