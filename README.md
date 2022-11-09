@@ -1,3 +1,6 @@
+> __Warning__ \
+> This reposity will not update the data anymore, use [this](https://github.com/LuganoStats/LVGAPoint-Dataset) one instead
+
 # LVGA POINT DATASET
 
 This folder create an algorithm to scrape data from:
